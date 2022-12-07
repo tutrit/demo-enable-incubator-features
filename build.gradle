@@ -6,15 +6,19 @@ group = 'com.tutrit'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+
+
+
+
 tasks.withType(JavaCompile) {
-	options.compilerArgs += "--add-modules";
+	options.compilerArgs += "--add-modules"
 	options.compilerArgs += "jdk.incubator.vector"
 }
 tasks.withType(Test) {
-	jvmArgs += "--add-modules";
+	jvmArgs += "--add-modules"
 	jvmArgs += "jdk.incubator.vector"
 }
 tasks.withType(JavaExec) {
-	jvmArgs += "--add-modules";
+	jvmArgs += "--add-modules"
 	jvmArgs += "jdk.incubator.vector"
 }
